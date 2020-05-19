@@ -3,6 +3,7 @@
     "version": "7.0.0",
     "private": true,
     "scripts": {
+        "serve": "cp-cli build _site/react/react-ui && serve",
         "start": "react-scripts start -o",
         "build": "react-scripts build",
         "test": "react-scripts test",
