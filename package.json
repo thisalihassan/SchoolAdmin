@@ -1,0 +1,39 @@
+{
+    "name": "react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server",
+    "engines": {
+        "node": "12.16.0",
+        "npm": "6.14.0"
+    },
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix react-ui",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix react-ui && npm run build --prefix react-ui"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bcryptjs": "^2.4.3",
+        "config": "^3.3.1",
+        "crypto": "^1.0.1",
+        "express": "^4.17.1",
+        "express-validator": "^6.4.1",
+        "generate-password": "^1.5.1",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.25.3",
+        "mongoose": "^5.9.14",
+        "multer": "^1.4.2",
+        "nodemailer": "^6.4.6",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "concurrently": "^5.2.0",
+        "cors": "^2.8.5",
+        "nodemon": "^2.0.4"
+    }
+}
