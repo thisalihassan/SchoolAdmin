@@ -12,7 +12,7 @@
         "server": "nodemon server",
         "client": "npm start --prefix react-ui",
         "dev": "concurrently \"npm run server\" \"npm run client\"",
-        "heroku-postbuild": "npm install --prefix react-ui && npm run build --prefix react-ui && npm install -g serve && serve -s build"
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix react-ui && npm run build --prefix react-ui"
     },
     "author": "",
     "license": "ISC",
